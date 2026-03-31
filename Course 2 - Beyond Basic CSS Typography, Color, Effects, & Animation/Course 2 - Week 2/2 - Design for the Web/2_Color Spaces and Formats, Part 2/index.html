@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Color Spaces</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Testing Color Spaces</h1>
+    <section>
+        <div class="oklch-pink">P3</div>
+        <div class="rgb-pink">RGB</div>
+    </section>
+
+    <section>
+        <div class="oklch-green">P3</div>
+        <div class="rgb-green">RGB</div>
+    </section>
+
+    <section>
+        <div class="oklch-blue">P3</div>
+        <div class="rgb-blue">RGB</div>
+    </section>
+
+    <script>
+        const hasHighDynamicRange = window.matchMedia('(dynamic-range: high)').matches;
+        console.log(`High dynamic range support ${hasHighDynamicRange}`);
+
+        const hasP3Color = window.matchMedia('(color-gamut: p3)').matches;
+        console.log(`P3 Color Support ${hasP3Color}`);
+    </script>
+    
+</body>
+</html>

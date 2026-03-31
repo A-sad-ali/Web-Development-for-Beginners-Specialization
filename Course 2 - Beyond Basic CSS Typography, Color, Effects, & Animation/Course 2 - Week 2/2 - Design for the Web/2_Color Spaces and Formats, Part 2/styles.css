@@ -1,0 +1,45 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5em;
+}
+
+section div {
+    width: 20vw;
+    aspect-ratio: 1 / 1;
+    display: grid;
+    place-content: center;
+    color: #fff;
+}
+
+.oklch-pink {
+    background-color: oklch(71.76% 0.35 331.41);
+}
+
+.rgb-pink {
+    background-color: #ff42f1;
+}
+
+.oklch-green {
+    background-color: oklch(84.41% 0.328 146.12);
+}
+
+.rgb-green {
+    background-color: #00f553;
+}
+
+.oklch-blue {
+    background-color: oklch(54.41% 0.244 257.29);
+}
+
+.rgb-blue {
+    background-color: #006ade;
+}
